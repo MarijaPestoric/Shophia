@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&family=Playfair+Display:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    max-width: 100%;
+    font-family: "Lato", sans-serif;
+}
+ol{
+    list-style-type: none;
+}
+
+/* TOP NAVBAR */
+
+.top-nav{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: .5rem 4rem;
+}
+.top-nav__phone{
+    display: flex;
+}
+.top-nav__phone-number{
+    padding-left: 1rem;
+}
+.top-nav__login{
+    display: flex;
+}
+.top-nav__login-item{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid black;
+}
+.top-nav__login-item:last-child{
+    border-right: 1px solid transparent; /*uklanjanje poslednje crtice*/
+}
+
+/* MAIN NAVBAR */
+
+.main-nav{
+    margin-left: 3rem;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr .5fr;
+}
+.main-nav__menu-item{
+    padding: 1rem;
+    display: inline;
+}
+.main-nav__menu-link{
+    font-family: 'Playfair Display', serif;
+}
+.main-nav__menu-link, .top-nav__login-link{
+    text-decoration: none;
+    color: black;
+}
+.main-nav__logo{
+    font-size: 4rem;
+    text-align: center;
+}
+.main-nav__icons{
+    text-align: center;
+}
+.main-nav__icons-icon{
+    padding-right: 1rem;
+}
+.main-nav__language{
+    text-align: center;
+}
+.main-nav__language-options{
+    background-color: black;
+    padding: .5rem 1rem;
+    color: white;
+}
+
+/* 
+
+
+.img-slider img{
+    max-width: 100%;
+    width: 100%;
+}
+.sale-box{
+    position: absolute;
+    bottom: 35rem;
+    width: 10rem;
+    margin: 0 auto;
+}
+.slider-container{
+    position: relative;
+} */
