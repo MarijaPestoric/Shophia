@@ -58,7 +58,7 @@ button{
 .main-nav__menu-item{
     padding: 1rem;
     display: block;
-    
+
 }
 
 .main-nav__menu-link{
@@ -96,11 +96,12 @@ button{
 
 .main-container{
     position: relative;
-}
-.main-container__image-img{
-    max-width: 100%;
     width: 100%;
-    height: 500px;
+    height: 692px;
+    max-width: 100%;
+    background: url("./images/main.png");
+    background-size: cover;
+    margin-bottom: 3rem;
 }
 
 /* SALE BOX */
@@ -171,8 +172,10 @@ button{
 }
 .slider-control{
     text-align: center;
-    position: relative;
+    position: absolute;
     bottom: 3rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* PAYMENT CONTAINER */
@@ -350,9 +353,6 @@ button{
     }
     .top-nav{
         font-size: .7rem;
-    }
-    .main-container__image-img{
-        height: 692px;
     }
     .sale-container{
         bottom: 10rem;
