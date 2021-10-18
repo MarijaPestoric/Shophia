@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meddon&family=Meie+Script&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-size: 18px;
+    font-size: 14px;
     max-width: 100%;
     font-family: "Lato", sans-serif;
 }
 ol{
     list-style-type: none;
 }
+button{
+    cursor: pointer;
+}
 
 /* TOP NAVBAR */
 
 .top-nav{
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,12 +51,16 @@ ol{
     margin-left: 3rem;
     padding-top: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr .5fr .5fr;
+    grid-template-columns: 1fr;
+    text-align: center;
 }
+
 .main-nav__menu-item{
     padding: 1rem;
-    display: inline;
+    display: block;
+    
 }
+
 .main-nav__menu-link{
     font-family: 'Playfair Display', serif;
 }
@@ -61,17 +69,22 @@ ol{
     color: black;
 }
 .main-nav__logo{
-    font-size: 4rem;
+    font-size: 3rem;
+    padding-bottom: 2rem;
     text-align: center;
+    font-family: 'Meddon', cursive;
 }
 .main-nav__icons{
     text-align: center;
+    padding-bottom: 1rem;
 }
 .main-nav__icons-icon{
     padding-right: 1rem;
+    width: 3rem;
 }
 .main-nav__language{
     text-align: center;
+    padding-bottom: 1rem;
 }
 .main-nav__language-options{
     background-color: black;
@@ -80,19 +93,21 @@ ol{
 }
 
 /* MAIN CONTAINER */
+
 .main-container{
     position: relative;
 }
 .main-container__image-img{
     max-width: 100%;
-    max-height: 592px;
     width: 100%;
+    height: 500px;
 }
 
 /* SALE BOX */
+
 .sale-container{
     position: absolute;
-    bottom: 12rem;
+    bottom: 8rem;
     width: 100%;
     text-align: center;
 }
@@ -101,6 +116,7 @@ ol{
     width: 15.22rem;
     height: 15.22rem;
     max-width: 15.22rem;
+    max-height: 15.22rem;
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid white;
@@ -145,9 +161,9 @@ ol{
 }
 
 .btn-shop{
-    font-size: 1.6rem;
+    font-size: 1rem;
     background-color: #F09D66;
-    width: 10.5rem;
+    width: 8rem;
     height: 3rem;
     color: white;
     margin-top: 2rem;
@@ -163,8 +179,10 @@ ol{
 
 .payment-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 .payment-container__shipping{
     display: flex;
@@ -172,10 +190,10 @@ ol{
     justify-content: center;
     background: url("./images/shipping.png");
     background-size: 100% 100%;
-    width: 24rem;
+    width: 27rem;
     height: 5.6rem;
     min-height: 5.6rem;
-    min-width: 24rem; 
+    min-width: 27rem; 
     color: white;
 
 }
@@ -183,10 +201,10 @@ ol{
     display: flex;
     background: url("./images/returns.png");
     background-size: 100% 100%;
-    width: 24rem;
+    width: 27rem;
     height: 5.6rem;
     min-height: 5.6rem;
-    min-width: 24rem;
+    min-width: 27rem;
     align-items: center;
     justify-content: center;
     color: white;
@@ -196,10 +214,10 @@ ol{
     display: flex;
     background: url("./images/support.png");
     background-size: 100% 100%;
-    width: 24rem;
+    width: 27rem;
     height: 5.6rem;
     min-height: 5.6rem;
-    min-width: 24rem;
+    min-width: 27rem;
     align-items: center;
     justify-content: center;
     color: white;
@@ -209,8 +227,159 @@ ol{
     padding-right: 1rem;
 }
 
-@media screen and (max-width: 800px) {
+/* HAND PICKED CONTAINER */
+
+.handpicked-container{
+    max-width: 100%;
+    width: 100%;
+}
+.handpicked-container__heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    max-width: 100%;
+    width: 100%;
+
+}
+.handpicked-container__heading-line{
+    width: 9rem;
+    height: .1rem;
+    max-width: 36rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+.handpicked-container__heading-diamond{
+    width: .7rem;
+    height: .7rem;
+}
+.handpicked-container__heading h3{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.boots-img{
+    grid-area: boots;
+    position: relative;
+}
+.boots-img-img{
+    width: 100%;
+    height: auto;
+}
+.boots-img-btn{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F09D66;
+    border: 1px solid transparent;
+    color: white;
+    padding: .5rem;
+}
+.jewelry-img{
+    grid-area: jewelry;
+}
+.paris-img{
+    grid-area: paris;
+}
+.discount-img{
+    grid-area: discount;
+}
+.wallet-img{
+    grid-area: wallet;
+}
+.handpicked-container__images{
+    display: grid;
+    grid-template-areas: 
+    "boots"
+    "jewelry"
+    "paris"
+    "discount"
+    "wallet";
+    grid-gap: 1rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.handpicked-container__images-img{
+    outline: 2px solid white;
+    outline-offset: -1rem;
+    min-width: 20rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* FOR TABLETS AND SMALL LAPTOPS */
+
+@media screen and (min-width: 769px) {
+    body{
+        font-size: 16px;
+    }
+    .top-nav{
+        font-size: .6rem;
+    }
+    
+    .main-nav__menu-item{
+        display: inline;
+    }
+    .main-nav{
+        grid-template-columns: 1fr 1fr .5fr .5fr;
+    }
+    .main-nav__menu-item{
+        display: inline-block;
+    }
+    .handpicked-container__heading-line{
+        width: 22rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }    
+    .handpicked-container__images{
+        grid-template-areas: 
+    "boots paris"
+    "jewelry paris"
+    "discount wallet";
+    }  
+}
+
+/* FOR LAPTOPS/DESKTOPS */
+
+@media screen and (min-width: 992px ){
+    body{
+        font-size: 18px;
+    }
+    .top-nav{
+        font-size: .7rem;
+    }
+    .main-container__image-img{
+        height: 692px;
+    }
+    .sale-container{
+        bottom: 10rem;
+    }
+    .btn-shop{
+        width: 14rem;
+        font-size: 2rem;
+    }
+    .sale-container__box{
+        bottom: 6rem;
+    }
+    .handpicked-container__heading-line{
+        width: 34rem;
+    }
+    .handpicked-container__heading h3{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .handpicked-container__images{
+        grid-template-areas: 
+    "boots paris discount"
+    "jewelry paris wallet";
+    }
+    .paris-img{
+        width: 460px;
+    }
     .payment-container{
-        flex-direction: column;
+        flex-direction: row;
     }
 }
