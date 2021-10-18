@@ -108,16 +108,16 @@ button{
 
 .sale-container{
     position: absolute;
-    bottom: 8rem;
+    top: 8rem;
     width: 100%;
     text-align: center;
 }
 .sale-container__box{
     position: relative;
-    width: 15.22rem;
-    height: 15.22rem;
-    max-width: 15.22rem;
-    max-height: 15.22rem;
+    width: 18rem;
+    height: 18rem;
+    max-width: 18rem;
+    max-height: 18rem;
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid white;
@@ -127,38 +127,40 @@ button{
 .sale-container__box p{
     color: white;
     padding: 1rem;
+    font-size: 1.3rem;
 }
 .sale-container__box h3{
     letter-spacing: .1rem;
+    font-size: 2rem;
 }
 .sale-container__box h1{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .sale-container__box-line--s1, .sale-container__box-line--s2{
     position: absolute;
     border-bottom: 1px solid white;
-    width: 2rem;
+    width: 3rem;
 }
 .sale-container__box-line--l1, .sale-container__box-line--l2{
     position: absolute;
     border-bottom: 1px solid white;
-    width: 4rem;
+    width: 5rem;
 }
 .sale-container__box-line--s1{
-    top: 9.6rem;
-    left: 3rem;
+    top: 11rem;
+    left: 3.5rem;
 }
 .sale-container__box-line--s2{
-    top: 9.6rem;
-    left: 10rem;
+    top: 11rem;
+    left: 11.5rem;
 }
 .sale-container__box-line--l1{
-    top: 10rem;
-    left: 1rem;
+    top: 11.5rem;
+    left: 1.5rem;
 }
 .sale-container__box-line--l2{
-    top: 10rem;
-    left: 10rem;
+    top: 11.5rem;
+    left: 11.5rem;
 }
 
 .btn-shop{
@@ -167,7 +169,7 @@ button{
     width: 8rem;
     height: 3rem;
     color: white;
-    margin-top: 2rem;
+    margin-top: 3rem;
     border: 1px solid transparent;
 }
 .slider-control{
@@ -354,15 +356,9 @@ button{
     .top-nav{
         font-size: .7rem;
     }
-    .sale-container{
-        bottom: 10rem;
-    }
     .btn-shop{
         width: 14rem;
         font-size: 2rem;
-    }
-    .sale-container__box{
-        bottom: 6rem;
     }
     .handpicked-container__heading-line{
         width: 34rem;
