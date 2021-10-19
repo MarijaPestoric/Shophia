@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&family=Playfair+Display:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Meddon&family=Meie+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -67,10 +67,12 @@ button{
     color: black;
 }
 .main-nav__logo{
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
     padding-bottom: 2rem;
     text-align: center;
-    font-family: 'Meddon', cursive;
+    font-family: 'Parisienne', cursive;
 }
 .main-nav__icons{
     text-align: center;
@@ -264,15 +266,15 @@ button{
     font-family: 'Playfair Display', serif;
 }
 
-.boots-img{
+.boots{
     grid-area: boots;
     position: relative;
 }
-.boots-img-img{
+.handpicked-container__images--hover{
     width: 100%;
     height: auto;
 }
-.boots-img-btn{
+.handpicked-container__images-btn{
     position: absolute;
     top: 80%;
     left: 50%;
@@ -281,18 +283,26 @@ button{
     border: 1px solid transparent;
     color: white;
     padding: .5rem;
+    display: none;
 }
-.jewelry-img{
+.handpicked-container__images--hover:hover + .handpicked-container__images-btn, .handpicked-container__images-btn:hover{ /*da se pojavi dugme prelaskom misa preko slike*/
+    display: inline-block;
+}
+.jewelry{
     grid-area: jewelry;
+    position: relative;
 }
-.paris-img{
+.paris{
     grid-area: paris;
+    position: relative;
 }
-.discount-img{
+.discount{
     grid-area: discount;
+    position: relative;
 }
-.wallet-img{
+.wallet{
     grid-area: wallet;
+    position: relative;
 }
 .handpicked-container__images{
     display: grid;
@@ -312,6 +322,9 @@ button{
     min-width: 20rem;
     margin: 0 auto;
     padding: 0;
+}
+.handpicked-container__images-img:hover{
+    opacity: .8;
 }
 
 /* FOR TABLETS AND SMALL LAPTOPS */
@@ -355,9 +368,12 @@ button{
     .top-nav{
         font-size: .7rem;
     }
+    .main-nav__logo{
+        font-size: 5rem;
+    }
     .btn-shop{
         width: 14rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .handpicked-container__heading-line{
         width: 34rem;
