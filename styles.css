@@ -246,7 +246,6 @@ button{
     margin-top: 4rem;
     max-width: 100%;
     width: 100%;
-
 }
 .handpicked-container__heading-line{
     width: 9rem;
@@ -254,7 +253,6 @@ button{
     max-width: 36rem;
     padding-left: 1rem;
     padding-right: 1rem;
-
 }
 .handpicked-container__heading-diamond{
     width: .7rem;
@@ -270,10 +268,15 @@ button{
     grid-area: boots;
     position: relative;
 }
-.handpicked-container__images--hover{
+.boots-img, .jewelry-img, .paris-img, .discount-img, .wallet-img{
     width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     height: auto;
+    min-height: 100%;
 }
+
+
 .handpicked-container__images-btn{
     position: absolute;
     top: 80%;
@@ -291,18 +294,22 @@ button{
 .jewelry{
     grid-area: jewelry;
     position: relative;
+
 }
 .paris{
     grid-area: paris;
     position: relative;
+
 }
 .discount{
     grid-area: discount;
     position: relative;
+
 }
 .wallet{
     grid-area: wallet;
     position: relative;
+
 }
 .handpicked-container__images{
     display: grid;
@@ -316,7 +323,7 @@ button{
     justify-content: center;
     margin-top: 3rem;
 }
-.handpicked-container__images-img{
+.handpicked-container__images--hover{
     outline: 2px solid white;
     outline-offset: -1rem;
     min-width: 20rem;
@@ -336,7 +343,6 @@ button{
     .top-nav{
         font-size: .6rem;
     }
-    
     .main-nav__menu-item{
         display: inline;
     }
