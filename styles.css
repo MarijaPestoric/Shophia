@@ -17,6 +17,7 @@ button{
     cursor: pointer;
 }
 
+
 /* TOP NAVBAR */
 
 .top-nav{
@@ -62,6 +63,9 @@ button{
 .main-nav__menu-link{
     font-family: 'Playfair Display', serif;
 }
+.main-nav__menu-link:hover{
+    opacity: .7;
+}
 .main-nav__menu-link, .top-nav__login-link{
     text-decoration: none;
     color: black;
@@ -77,11 +81,15 @@ button{
 .main-nav__icons{
     text-align: center;
     padding-bottom: 1rem;
+    cursor: pointer;
 }
 .main-nav__icons-icon{
     padding-right: .5rem;
     padding-left: .5rem;
     width: 3rem;
+}
+.main-nav__icons-icon:hover{
+    transform: scale(1.1);
 }
 .main-nav__language{
     text-align: center;
@@ -91,6 +99,7 @@ button{
     background-color: black;
     padding: .5rem 1rem;
     color: white;
+    cursor: pointer;
 }
 
 /* MAIN CONTAINER */
@@ -124,6 +133,26 @@ button{
     border: 1px solid white;
     outline: 2px solid white;
     outline-offset: .5rem;
+    animation: fillInAnimation linear 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fillInAnimation {
+    0%{
+        transform: translateY(-20vw);
+    }
+    25%{
+        transform: translateY(-10vw);
+    }
+    50%{
+        transform: translateY(-5vw);
+    }
+    75%{
+        transform: translateY(5vw);
+    }
+    100%{
+        transform: translateY(0vw);
+    }
 }
 .sale-container__box p{
     color: white;
@@ -166,13 +195,35 @@ button{
 
 .btn-shop{
     font-size: 1rem;
+    position: relative;
     background-color: #F09D66;
+    padding: 1rem;
+    top: 3rem;
+    border: 1px solid transparent;
+}
+.btn-shop span{
+    position: relative;
+    z-index: 2;
     width: 8rem;
     height: 3rem;
     color: white;
-    margin-top: 3rem;
-    border: 1px solid transparent;
+    cursor: pointer;
 }
+.btn-shop:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(5, 5, 5);
+    transition:ease-in-out .6s;
+    box-shadow:  5px 2px 5px white;
+}
+.btn-shop:hover:after{
+    width: 100%;
+}
+
 .slider-control{
     text-align: center;
     position: absolute;
@@ -201,8 +252,20 @@ button{
     min-height: 5.6rem;
     min-width: 27rem; 
     color: white;
-
+    animation: goLeft ease-in-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
+@keyframes goLeft {
+    0% {
+        transform: translateX(-10vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
 .payment-container__cashback{
     display: flex;
     background: url("./images/returns.png");
@@ -227,8 +290,21 @@ button{
     align-items: center;
     justify-content: center;
     color: white;
+    animation: goRight ease-in-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 
 }
+@keyframes goRight {
+    0% {
+        transform: translateX(10vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
 .payment-container__icons{
     padding-right: 1rem;
 }
@@ -332,6 +408,7 @@ button{
 }
 .handpicked-container__images-img:hover{
     opacity: .8;
+    transition-duration: .6s;
 }
 
 /* FOR TABLETS AND SMALL LAPTOPS */
@@ -378,7 +455,7 @@ button{
         font-size: 5rem;
     }
     .btn-shop{
-        width: 14rem;
+        width: 12rem;
         font-size: 1.8rem;
     }
     .handpicked-container__heading-line{
