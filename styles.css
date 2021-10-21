@@ -139,17 +139,12 @@ button{
 }
 @keyframes fillInAnimation {
     0%{
-        transform: translateY(-20vw);
-    }
-    25%{
-        transform: translateY(-10vw);
+        transform: translateY(-2vw);
     }
     50%{
-        transform: translateY(-5vw);
+        transform: scale(1.1);
     }
-    75%{
-        transform: translateY(5vw);
-    }
+
     100%{
         transform: translateY(0vw);
     }

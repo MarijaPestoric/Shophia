@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    max-width: 100%;
+    width: 100%;
+}
+ol{
+    list-style-type: none;
+}
+button{
+    cursor: pointer;
+}
+a:hover{
+    opacity: .5;
+}
+
+
+/* TOP NAVBAR */
+
+.top-nav{
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: .5rem 4rem;
+    color: black;
+}
+.top-nav__phone{
+    display: flex;
+}
+.top-nav__phone-number{
+    padding-left: 1rem;
+}
+.top-nav__login{
+    display: flex;
+}
+.top-nav__login-item{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid black;
+}
+.top-nav__login-item:last-child{
+    border-right: 1px solid transparent; /*uklanjanje poslednje crtice*/
+}
+
+/* MAIN NAVBAR */
+
+.main-nav{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+.main-nav__menu-item{
+    padding: 1rem;
+    display: block;
+}
+
+.main-nav__menu-link{
+    font-family: 'Playfair Display', serif;
+}
+.main-nav__menu-link, .top-nav__login-link{
+    text-decoration: none;
+    color: black;
+}
+.main-nav__logo{
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+}
+.main-nav__icons{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.main-nav__icons-icon{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    width: 3rem;
+    cursor: pointer;
+}
+.main-nav__icons-icon:hover{
+    transform: scale(1.1);
+}
+.main-nav__language{
+    text-align: center;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.main-nav__language-options{
+    background-color: black;
+    padding: .5rem 1rem;
+    color: white;
+}
+
+/* MAIN CONTAINER */
+
+.main-container{
+    background-size: cover;
+    padding: 5rem;
+    width: 100%;
+    max-width: 100%;
+}
+.main-heading{
+    font-size: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+.main-paragraph{
+    font-size: 2rem;
+    text-align: right;
+}
+
+/* ABOUT US */
+.about-us{
+    background-color: white;
+    color: rgb(48, 47, 47);
+    padding: 3rem;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.about-us__header{
+    padding: 6rem;
+    max-width: 100%;
+}
+
+.about-us-heading{
+    font-size: 5rem;
+    color: #ef476f;
+    padding-bottom: 0;
+    text-align: center;
+    animation: slideDownAnimation ease-in-out 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    max-width: 100%;
+}
+.about-us-paragraph{
+    position: relative;
+    max-width: 100%;
+    left: 3rem;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+    animation: fadeInAnimation ease-in-out 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: .5;
+    }
+    50%{
+        transform:scale(1.3);
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
+@keyframes slideDownAnimation {
+    0% {
+        transform: translateY(20vw);
+    }
+    50%{
+        transform: translateX(5vw);
+    }
+    100% {
+        transform: translateY(0vw);
+    }
+}
+
+.about-us__first, .about-us__second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    max-width: 100%;
+    font-family: 'Lora', serif;
+}
+.about-us__second{
+    text-align: right;
+}
+.about-us__first{
+    text-align: left;
+}
+.about-us__first-content{
+    animation: sideInLeft ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.about-us-line{
+    border-top: 5px solid #ffd166;
+    width: 3rem;
+    display: inline-block;
+    margin: .5rem 0 1rem 0;
+}
+.about-us-role{
+    margin-top: 1.5rem;
+    font-family: 'Playfair Display';
+}
+.btn-flip{
+    margin-top: 2rem;
+	opacity: 1;
+	outline: 0;
+	color: #fff;
+	line-height: 40px;
+	position: relative;
+	text-align: center;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn-flip:hover:after{
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before{
+    opacity: 0;
+	transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after{
+    top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	color: white;
+    font-weight: bold;
+	display: block;
+	transition: 1s;
+	position: absolute;
+	background: #ef476f;
+	content: "gitHub";
+	transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip:before{
+    top: 0;
+	left: 0;
+	opacity: 1;
+	color: white;
+	display: block;
+	padding: 0 30px;
+	line-height: 40px;
+	transition: 1s;
+	position: relative;
+	background: #073b4c;
+	content: "See more";
+	transform: translateY(0) rotateX(0);
+}
+.about-us__container h1{
+    color: #ef476f;
+}
+h3{
+    color: #073b4c;
+}
+@keyframes sideInLeft {
+    0% {
+        transform: translateX(20vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+.about-us__second-content{
+    animation: sideInRight ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sideInRight {
+    0% {
+        transform: translateX(-20vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+.about-us__second-img, .about-us__first-img{
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.about-us__illustration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+@media screen and (min-width: 798px) {
+    .about-us__first{
+        flex-direction: row;
+    }
+    .about-us__second{
+        flex-direction: row-reverse;
+    }
+}
+@media screen and (min-width: 992px) {
+    .about-us__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us__second h1, .about-us__first h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .about-us__first-img, .about-us__second-img{
+        text-align: center;
+    }
+}
