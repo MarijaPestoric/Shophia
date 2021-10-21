@@ -63,6 +63,7 @@ a:hover{
     background: white;
 }
 
+
 .main-nav__menu-item{
     padding: 1rem;
     display: block;
@@ -110,7 +111,6 @@ a:hover{
 /* MAIN CONTAINER */
 
 .main-container{
-    background-size: cover;
     padding: 5rem;
     width: 100%;
     max-width: 100%;
@@ -126,22 +126,26 @@ a:hover{
 }
 
 /* ABOUT US */
+
 .about-us{
     background-color: white;
     color: rgb(48, 47, 47);
-    padding: 3rem;
     max-width: 100%;
     width: 100%;
     overflow: hidden;
 }
 .about-us__header{
+    background-image: url("./images/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg");
+    background-size: cover;
     padding: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     max-width: 100%;
 }
 
 .about-us-heading{
     font-size: 5rem;
-    color: #ef476f;
+    color: #073b4c;
     padding-bottom: 0;
     text-align: center;
     animation: slideDownAnimation ease-in-out 1s;
@@ -151,10 +155,12 @@ a:hover{
 }
 .about-us-paragraph{
     position: relative;
+    color: #ef476f;
     max-width: 100%;
-    left: 3rem;
-    font-size: 1.3rem;
+    left: 5rem;
+    font-size: 2rem;
     font-style: italic;
+    font-weight: 700;
     text-align: center;
     animation: fadeInAnimation ease-in-out 1s;
     animation-delay: 1s;
@@ -190,6 +196,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 2rem;
     margin-bottom: 4rem;
     max-width: 100%;
     font-family: 'Lora', serif;
@@ -307,8 +314,25 @@ h3{
     max-width: 100%;
 }
 
+/* FOR TABLETS AND SMALL LAPTOPS */
 
-@media screen and (min-width: 798px) {
+@media screen and (min-width: 769px) {
+    body{
+        font-size: 16px;
+    }
+    .top-nav{
+        font-size: .6rem;
+    }
+    .main-nav__menu-item{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-nav{
+        grid-template-columns: 1fr 1fr .5fr .5fr;
+    }
+    .main-nav__menu-item{
+        display: inline-block;
+    }
     .about-us__first{
         flex-direction: row;
     }
@@ -316,7 +340,20 @@ h3{
         flex-direction: row-reverse;
     }
 }
+
+/* FOR LAPTOPS/DESKTOPS */
+
 @media screen and (min-width: 992px) {
+    body{
+        font-size: 18px;
+    }
+    .top-nav{
+        font-size: .7rem;
+    }
+    .main-nav__logo{
+        font-size: 5rem;
+    }
+
     .about-us__container{
         display: flex;
         flex-direction: column;
