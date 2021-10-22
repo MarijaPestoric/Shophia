@@ -258,7 +258,6 @@ button{
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    overflow: hidden;
 }
 .payment-container__shipping{
     display: flex;
@@ -270,6 +269,7 @@ button{
     height: 5.6rem;
     min-height: 5.6rem;
     min-width: 27rem; 
+    overflow: hidden;
     color: white;
     animation: goLeft ease-in-out 2s;
     animation-iteration-count: 1;
@@ -292,6 +292,7 @@ button{
     width: 27rem;
     height: 5.6rem;
     min-height: 5.6rem;
+    overflow: hidden;
     min-width: 27rem;
     align-items: center;
     justify-content: center;
@@ -306,6 +307,7 @@ button{
     height: 5.6rem;
     min-height: 5.6rem;
     min-width: 27rem;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     color: white;
