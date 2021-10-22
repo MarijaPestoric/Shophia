@@ -84,7 +84,7 @@ button{
 }
 
 .main-nav__menu-link{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', cursive;
 }
 .main-nav__menu-link:hover{
     opacity: .7;
@@ -355,9 +355,8 @@ button{
 .handpicked-container__heading h3{
     padding-left: 1rem;
     padding-right: 1rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', cursive;
 }
-
 .boots{
     grid-area: boots;
     position: relative;
@@ -366,11 +365,10 @@ button{
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
     min-height: 100%;
+    height: auto;
 }
-
-
 .handpicked-container__images-btn{
     position: absolute;
     top: 80%;
