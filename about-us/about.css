@@ -229,9 +229,38 @@ a:hover{
     text-align: left;
 }
 .about-us__first-content{
-    animation: sideInLeft ease 1s;
+    animation: sideInLeft ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.about-us__second-content{
+    animation: sideInRight ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+@keyframes sideInLeft {
+    0% {
+        transform: translateX(20vw);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+@keyframes sideInRight {
+    0% {
+        transform: translateX(-20vw);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
 }
 .about-us-line{
     border-top: 5px solid #ffd166;
@@ -299,29 +328,6 @@ a:hover{
 h3{
     color: #073b4c;
 }
-@keyframes sideInLeft {
-    0% {
-        transform: translateX(20vw);
-    }
-    100% {
-        transform: translateX(0vw);
-    }
-}
-.about-us__second-content{
-    animation: sideInRight ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes sideInRight {
-    0% {
-        transform: translateX(-20vw);
-    }
-    100% {
-        transform: translateX(0vw);
-    }
-}
-
 .about-us__second-img, .about-us__first-img{
     width: 100%;
     padding-bottom: 2rem;
