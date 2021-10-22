@@ -27,6 +27,7 @@ a:hover{
 
 .top-nav{
     font-size: 0.5rem;
+    font-family: sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
