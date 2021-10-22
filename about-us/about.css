@@ -91,7 +91,7 @@ a:hover{
     padding: 1rem;
 }
 .main-nav__menu-link{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', cursive;
 }
 .main-nav__menu-link, .top-nav__login-link{
     text-decoration: none;
@@ -220,7 +220,7 @@ a:hover{
     padding: 0 2rem;
     margin-bottom: 4rem;
     max-width: 100%;
-    font-family: 'Lora', serif;
+    font-family: 'Lora';
 }
 .about-us__second{
     text-align: right;
@@ -241,7 +241,7 @@ a:hover{
 }
 .about-us-role{
     margin-top: 1.5rem;
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', cursive;
 }
 .btn-flip{
     margin-top: 2rem;
