@@ -63,13 +63,33 @@ a:hover{
     color: black;
     background: white;
 }
-
-
+.main-nav__navbar{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+.hamburger:focus{
+    outline: none;
+}
+.main-nav__menu.show {
+    display: flex;
+}
+.main-nav__menu{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
 .main-nav__menu-item{
     padding: 1rem;
-    display: block;
 }
-
 .main-nav__menu-link{
     font-family: 'Playfair Display', serif;
 }
@@ -324,15 +344,15 @@ h3{
     .top-nav{
         font-size: .6rem;
     }
-    .main-nav__menu-item{
-        display: flex;
-        flex-wrap: wrap;
-    }
     .main-nav{
         grid-template-columns: 1fr 1fr .5fr .5fr;
     }
-    .main-nav__menu-item{
-        display: inline-block;
+    .hamburger{
+        display: none;
+    }
+    .main-nav__menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .about-us__first{
         flex-direction: row;
@@ -351,10 +371,16 @@ h3{
     .top-nav{
         font-size: .7rem;
     }
+    .hamburger{
+        display: none;
+    }
+    .main-nav__menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     .main-nav__logo{
         font-size: 5rem;
     }
-
     .about-us__container{
         display: flex;
         flex-direction: column;
