@@ -332,6 +332,7 @@ button{
 .handpicked-container{
     max-width: 100%;
     width: 100%;
+    overflow: hidden;
 }
 .handpicked-container__heading{
     display: flex;
@@ -493,8 +494,8 @@ button{
     }
     .handpicked-container__images{
         grid-template-areas: 
-    "boots paris discount"
-    "jewelry paris wallet";
+        "boots paris discount"
+        "jewelry paris wallet";
     }
     .paris-img{
         width: 460px;
