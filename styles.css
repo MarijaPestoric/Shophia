@@ -273,7 +273,7 @@ button{
     animation: goLeft ease-in-out 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes goLeft {
     0% {
@@ -311,7 +311,7 @@ button{
     animation: goRight ease-in-out 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 
 }
 @keyframes goRight {
