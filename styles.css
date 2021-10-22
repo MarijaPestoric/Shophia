@@ -258,6 +258,7 @@ button{
     align-items: center;
     justify-content: center;
     max-width: 100%;
+    overflow: hidden;
 }
 .payment-container__shipping{
     display: flex;
