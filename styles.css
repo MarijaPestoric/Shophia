@@ -212,7 +212,6 @@ button{
     top: 11.5rem;
     left: 11.5rem;
 }
-
 .btn-shop{
     font-size: 1rem;
     position: relative;
@@ -299,7 +298,6 @@ button{
     align-items: center;
     justify-content: center;
     color: white;
-
 }
 .payment-container__support{
     display: flex;
@@ -317,7 +315,6 @@ button{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-delay: 1.5s;
-
 }
 @keyframes goRight {
     0% {
@@ -412,7 +409,6 @@ button{
     "paris"
     "discount"
     "wallet";
-    grid-gap: 1rem;
     justify-content: center;
     margin-top: 3rem;
 }
@@ -421,7 +417,7 @@ button{
     outline-offset: -1rem;
     min-width: 20rem;
     margin: 0 auto;
-    padding: 0;
+    margin-top: 1rem;
 }
 .handpicked-container__images-img:hover{
     opacity: .8;
@@ -458,7 +454,11 @@ button{
     "boots paris"
     "jewelry paris"
     "discount wallet";
-    }  
+    grid-gap: 1rem;
+    } 
+    .handpicked-container__images--hover{
+        margin-top: 0;
+    }
     .paris-img{
         height: 100%;
     }
