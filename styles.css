@@ -342,9 +342,10 @@ button{
     margin-top: 4rem;
     max-width: 100%;
     width: 100%;
+    overflow: hidden;
 }
 .handpicked-container__heading-line{
-    width: 9rem;
+    width: 100%;
     height: .1rem;
     max-width: 36rem;
     padding-left: 1rem;
@@ -410,6 +411,7 @@ button{
     "wallet";
     justify-content: center;
     margin-top: 3rem;
+    width: 100%;
 }
 .handpicked-container__images--hover{
     outline: 2px solid white;
@@ -443,7 +445,7 @@ button{
         grid-template-columns: 1fr 1fr;
     }
     .payment-container__shipping, .payment-container__cashback, .payment-container__support{
-        width: 32rem;
+        width: 26rem;
     }
     .handpicked-container__heading-line{
         width: 100%;
