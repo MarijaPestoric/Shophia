@@ -32,9 +32,10 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     background-color: #f2f2f2;
-    padding: .5rem 2rem;
     max-height: 1.3rem;
     color: black;
+    padding: .5rem 1rem;
+    width: 100%;
 }
 .top-nav__phone{
     display: flex;
