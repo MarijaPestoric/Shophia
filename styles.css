@@ -140,6 +140,7 @@ button{
     background: url("./images/main.png");
     background-size: cover;
     margin-bottom: 3rem;
+    overflow: hidden;
 }
 
 /* SALE BOX */
