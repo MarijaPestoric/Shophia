@@ -26,10 +26,12 @@ button{
     justify-content: space-between;
     align-items: center;
     background-color: #f2f2f2;
-    padding: .5rem 4rem;
+    padding: .5rem 2rem;
+    max-height: 1.2rem;
 }
 .top-nav__phone{
     display: flex;
+
 }
 .top-nav__phone-number{
     padding-left: 1rem;
