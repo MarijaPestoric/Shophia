@@ -29,6 +29,7 @@ button{
     max-height: 1.3rem;
     padding: .5rem 1rem;
     width: 100%;
+    overflow: hidden;
 }
 .top-nav__phone{
     display: flex;
