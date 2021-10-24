@@ -596,7 +596,7 @@ button{
     margin-bottom: 3rem;
 }
 
-.comments .container1 {
+.container1 {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -608,12 +608,12 @@ button{
     width: 50%;
     margin-bottom: 5rem;
 }*/
-.comments .rectangles {
+.people {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 }
-.comments .rectangle8 {
+.rectangle8 {
     width: 100%; 
     max-width: 350px;
 }
