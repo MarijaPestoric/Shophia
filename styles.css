@@ -402,18 +402,18 @@ button{
     margin-bottom: 3rem;
 }
 
-.comments .container {
+.comments .container1 {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.handpicked-container__heading h3 {
+/*.handpicked-container__heading h3 {
     font-size: 2.5rem;
     width: 50%;
     margin-bottom: 5rem;
-}
+}*/
 .comments .rectangles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -430,7 +430,7 @@ button{
     grid-row-gap: 5rem;
 }
 
-.welcome_screen .rectangles {
+.rectangles {
     grid-column: 3/5;
     position: relative;
 }
