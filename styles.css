@@ -273,7 +273,6 @@ button{
     background: url("./images/shipping.png");
     background-size: 100% 100%;
     width: 26rem;
-    max-width: 100%;
     height: 5.6rem;
     min-height: 5.6rem;
     overflow: hidden;
@@ -297,7 +296,6 @@ button{
     background: url("./images/returns.png");
     background-size: 100% 100%;
     width: 26rem;
-    max-width: 100%;
     height: 5.6rem;
     min-height: 5.6rem;
     overflow: hidden;
@@ -310,7 +308,6 @@ button{
     background: url("./images/support.png");
     background-size: 100% 100%;
     width: 26rem;
-    max-width: 100%;
     height: 5.6rem;
     min-height: 5.6rem;
     overflow: hidden;
@@ -433,9 +430,121 @@ button{
     transition-duration: .6s;
 }
 
+/* FOOTER */
+
+.footer-container{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-areas: 
+     "shops"
+     "information"
+     "customer"
+     "connect"
+     "newsletter";
+    color: white;
+    background-color: #141414;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+.shops{
+    grid-area: shops;
+}
+.information{
+    grid-area: information;
+}
+.customer-service{
+    grid-area: customer;
+}
+.newsletter{
+    grid-area: newsletter;
+}
+.stay-connected{
+    grid-area: connect;
+}
+.footer-container__section-title{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.footer-container__list{
+    list-style-type: none;
+}
+.footer-container-link{
+    text-decoration: none;
+    color: #6A6A6A;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+}
+.footer-icon{
+    width: 2.5rem;
+    margin-right: .5rem;
+}
+.footer-container__section-form{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    width: 22rem;
+    margin-bottom: 2rem;
+    outline: 1px solid #6A6A6A;
+    outline-offset: .1rem;
+}
+.footer-input{
+    padding: .5rem 1rem;
+    background-color: #141414;
+    border: none;
+    font-size: .8rem;
+}
+.footer-btn{
+    background-color: #6A6A6A;
+    color: white;
+    padding: .5rem 1rem;
+    margin-left: 2rem;
+    border: none;
+    font-size: .7rem;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;  
+    font-size: .8rem;
+    background-color: #141414;
+    color: #363636;  
+    padding: .5rem 1rem;
+}
+.footer-bottom__line{
+    width: 100%;
+    max-width: 100%;
+}
+.footer-bottom__line-img{
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.footer-bottom__rights{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom__rights-arrow img{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: .2rem;
+    padding: .4rem;
+    width: 1.5rem;
+}
+.footer-bottom__rights-arrow img:hover{
+    background-color: #6A6A6A;
+}
+.footer-bottom__cards{
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+}
+.footer-bottom__cards img{
+    padding-right: 1rem;
+    width: 2rem;
+}
+
+
 /* FOR TABLETS AND SMALL LAPTOPS */
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 769px) {
     body{
         font-size: 16px;
     }
@@ -474,11 +583,22 @@ button{
     .paris-img{
         height: 100%;
     }
+    .footer-container{
+        grid-template-areas: 
+            "shops information"
+            "customer connect"
+            "customer newsletter";
+            padding-left: 2rem;
+            padding-bottom: 2rem;
+    }
+    .footer-bottom{
+        padding-left: 2rem;
+    }
 }
 
 /* FOR LAPTOPS/DESKTOPS */
 
-@media screen and (min-width: 992px ){
+@media screen and (min-width: 1024px ){
     body{
         font-size: 18px;
     }
@@ -520,5 +640,15 @@ button{
         flex-direction: row;
         overflow: hidden;
         max-width: 100%;
+    }
+    .footer-container{
+        grid-template-areas: 
+            "shops information customer connect"
+            "shops information customer newsletter";
+        padding-left: 3rem;
+        padding-bottom: 3rem;
+    }
+    .footer-bottom{
+        padding-left: 3rem;
     }
 }
