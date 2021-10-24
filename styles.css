@@ -336,14 +336,13 @@ button{
 
 /*SUMMER COLLECTION*/
 
-.f1-img, .f2-img, .f3-img, .f4.img, .f5-img, .f6-img, .f7-img, .f8-img {
-    /*width: 90%;*/
+/*.f1-img, .f2-img, .f3-img, .f4.img, .f5-img, .f6-img, .f7-img, .f8-img {
     min-width: 100%;
     max-width: 100%;
     max-height: 100%;
     min-height: 100%;
     height: auto;
-}
+}*/
 
 .container {
     max-width: 100%;
@@ -351,30 +350,17 @@ button{
     overflow: hidden;
 }
 
-.handpicked-container__images {
+.outfit-containers {
     display: grid;
-    grid-template-areas: 
-    "f1"
-    "f2"
-    "f3"
-    "f4"
-    "f5"
-    "f6"
-    "f7"
-    "f8";
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
-    justify-content: center;
+    position: relative;
     margin-top: 3rem;
 }
 
-.container__images-img:hover {
-    opacity: .8;
-    transition-duration: .6s;
-}
+/*SUMMER COLLECTION*/ /*OUR BRAND*/ /*CUSTOMER SAYS*/
 
-/*OUR BRAND*/ /*CUSTOMER SAYS*/
-
-.brand-container .customer-container {
+.outfit-container .brand-container .customer-container {
     text-align: center;
     display: flex;
     flex-direction: column;
