@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    max-width: 100%;
+    width: 100%;
+}
+ol{
+    list-style-type: none;
+}
+button{
+    cursor: pointer;
+}
+a:hover{
+    opacity: .5;
+}
+
+
+/* TOP NAVBAR */
+
+.top-nav{
+    font-size: 0.5rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    max-height: 1.3rem;
+    color: black;
+    padding: .5rem 1rem;
+    width: 100%;
+}
+.top-nav__phone{
+    display: flex;
+    align-items: center;
+}
+.top-nav__phone-number{
+    padding-left: 1rem;
+    align-items: center;
+}
+.top-nav__login{
+    display: flex;
+}
+.top-nav__login-item{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid black;
+}
+.top-nav__login-item:last-child{
+    border-right: 1px solid transparent; /*uklanjanje poslednje crtice*/
+}
+
+/* MAIN NAVBAR */
+
+.main-nav{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    color: black;
+    background: white;
+}
+.main-nav__navbar{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+.hamburger:focus{
+    outline: none;
+}
+.main-nav__menu.show {
+    display: flex;
+}
+.main-nav__menu{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+.main-nav__menu-item{
+    padding: 1rem;
+}
+.main-nav__menu-link{
+    font-family: 'Playfair Display', cursive;
+}
+.main-nav__menu-link, .top-nav__login-link{
+    text-decoration: none;
+    color: black;
+}
+.main-nav__logo{
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+}
+.main-nav__icons{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.main-nav__icons-icon{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    width: 3rem;
+    cursor: pointer;
+}
+.main-nav__icons-icon:hover{
+    transform: scale(1.1);
+}
+.main-nav__language{
+    text-align: center;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.main-nav__language-options{
+    background-color: black;
+    padding: .5rem 1rem;
+    color: white;
+}
+
+/* MAIN CONTAINER */
+
+.main-container{
+    padding: 5rem;
+    width: 100%;
+    max-width: 100%;
+}
+.main-heading{
+    font-size: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+.main-paragraph{
+    font-size: 2rem;
+    text-align: right;
+}
+
+/* ABOUT US */
+
+.about-us{
+    background-color: white;
+    color: rgb(48, 47, 47);
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.about-us__header{
+    background-image: url("./images/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg");
+    background-size: cover;
+    padding: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    max-width: 100%;
+}
+
+.about-us-heading{
+    font-size: 5rem;
+    color: #073b4c;
+    padding-bottom: 0;
+    text-align: center;
+    animation: slideDownAnimation ease-in-out 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    max-width: 100%;
+}
+.about-us-paragraph{
+    position: relative;
+    color: #ef476f;
+    max-width: 100%;
+    left: 5rem;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    animation: fadeInAnimation ease-in-out 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: .5;
+    }
+    50%{
+        transform:scale(1.3);
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
+@keyframes slideDownAnimation {
+    0% {
+        transform: translateY(20vw);
+    }
+    50%{
+        transform: translateX(5vw);
+    }
+    100% {
+        transform: translateY(0vw);
+    }
+}
+
+.about-us__first, .about-us__second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+    max-width: 100%;
+    font-family: 'Lora';
+}
+.about-us__second{
+    text-align: right;
+}
+.about-us__first{
+    text-align: left;
+}
+.about-us__first-content{
+    animation: sideInLeft ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.about-us__second-content{
+    animation: sideInRight ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+@keyframes sideInLeft {
+    0% {
+        transform: translateX(20vw);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+@keyframes sideInRight {
+    0% {
+        transform: translateX(-20vw);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+.about-us-line{
+    border-top: 5px solid #ffd166;
+    width: 3rem;
+    display: inline-block;
+    margin: .5rem 0 1rem 0;
+}
+.about-us-role{
+    margin-top: 1.5rem;
+    font-family: 'Playfair Display', cursive;
+}
+.btn-flip{
+    margin-top: 2rem;
+	opacity: 1;
+	outline: 0;
+	color: #fff;
+	line-height: 40px;
+	position: relative;
+	text-align: center;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn-flip:hover:after{
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before{
+    opacity: 0;
+	transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after{
+    top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	color: white;
+    font-weight: bold;
+	display: block;
+	transition: 1s;
+	position: absolute;
+	background: #ef476f;
+	content: "gitHub";
+	transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip:before{
+    top: 0;
+	left: 0;
+	opacity: 1;
+	color: white;
+	display: block;
+	padding: 0 30px;
+	line-height: 40px;
+	transition: 1s;
+	position: relative;
+	background: #073b4c;
+	content: "See more";
+	transform: translateY(0) rotateX(0);
+}
+.about-us__container h1{
+    color: #ef476f;
+}
+.about-us-role{
+    color: #073b4c;
+}
+.about-us__second-img, .about-us__first-img{
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.about-us__illustration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* FOOTER */
+
+.footer-container{
+    margin-top: 4rem;
+    font-family: "Lato", sans-serif;
+    display: grid;
+    grid-template-areas: 
+     "shops"
+     "information"
+     "customer"
+     "connect"
+     "newsletter";
+    color: white;
+    background-color: #141414;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+.shops{
+    grid-area: shops;
+}
+.information{
+    grid-area: information;
+}
+.customer-service{
+    grid-area: customer;
+}
+.newsletter{
+    grid-area: newsletter;
+}
+.stay-connected{
+    grid-area: connect;
+}
+.footer-container__section-title{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.footer-container__list{
+    list-style-type: none;
+}
+.footer-container-link{
+    text-decoration: none;
+    color: #6A6A6A;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+}
+.footer-icon{
+    width: 2.5rem;
+    margin-right: .5rem;
+}
+.footer-container__section-form{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    width: 22rem;
+    margin-bottom: 2rem;
+    outline: 1px solid #6A6A6A;
+    outline-offset: .1rem;
+}
+.footer-input{
+    padding: .5rem 1rem;
+    background-color: #141414;
+    border: none;
+    font-size: .8rem;
+}
+.footer-btn{
+    background-color: #6A6A6A;
+    color: white;
+    padding: .5rem 1rem;
+    margin-left: 2rem;
+    border: none;
+    font-size: .7rem;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;  
+    font-size: .8rem;
+    background-color: #141414;
+    color: #363636;  
+    padding: .5rem 1rem;
+    font-family: "Lato", sans-serif;
+}
+.footer-bottom__line{
+    width: 100%;
+    max-width: 100%;
+}
+.footer-bottom__line-img{
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.footer-bottom__rights{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom__rights-arrow img{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: .2rem;
+    padding: .4rem;
+    width: 1.5rem;
+}
+.footer-bottom__rights-arrow img:hover{
+    background-color: #6A6A6A;
+}
+.footer-bottom__cards{
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+}
+.footer-bottom__cards img{
+    padding-right: 1rem;
+    width: 2rem;
+}
+
+
+
+/* FOR TABLETS AND SMALL LAPTOPS */
+
+@media screen and (min-width: 769px) {
+    body{
+        font-size: 16px;
+    }
+    .top-nav{
+        font-size: .6rem;
+    }
+    .main-nav{
+        grid-template-columns: 1fr 1fr .5fr .5fr;
+    }
+    .hamburger{
+        display: none;
+    }
+    .main-nav__menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-us__first{
+        flex-direction: row;
+    }
+    .about-us__second{
+        flex-direction: row-reverse;
+    }
+    .footer-container{
+        grid-template-areas: 
+            "shops information"
+            "customer connect"
+            "customer newsletter";
+            padding-left: 2rem;
+            padding-bottom: 2rem;
+    }
+    .footer-bottom{
+        padding-left: 2rem;
+    }
+}
+
+/* FOR LAPTOPS/DESKTOPS */
+
+@media screen and (min-width: 1024px) {
+    body{
+        font-size: 18px;
+    }
+    .top-nav{
+        font-size: .7rem;
+    }
+    .hamburger{
+        display: none;
+    }
+    .main-nav__menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .main-nav__logo{
+        font-size: 5rem;
+    }
+    .about-us__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us__second h1, .about-us__first h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .about-us__first-img, .about-us__second-img{
+        text-align: center;
+    }
+    .footer-container{
+        grid-template-areas: 
+            "shops information customer connect"
+            "shops information customer newsletter";
+        padding-left: 3rem;
+        padding-bottom: 3rem;
+    }
+    .footer-bottom{
+        padding-left: 3rem;
+    }
+}

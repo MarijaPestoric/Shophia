@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Shophia</title>
 </head>
@@ -22,9 +23,12 @@
     </div>
     <div class="main-nav">
         <nav class="main-nav__navbar">
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
             <ol class="main-nav__menu">
-                <li class="main-nav__menu-item"><a class="main-nav__menu-link" href="#home">Home</a></li>
-                <li class="main-nav__menu-item"><a class="main-nav__menu-link" href="#home">Gallery</a></li>
+                <li class="main-nav__menu-item"><a class="main-nav__menu-link" href="./index.html">Home</a></li>
+                <li class="main-nav__menu-item"><a class="main-nav__menu-link" href="./about-us/about.html">About Us</a></li>
                 <li class="main-nav__menu-item"><a class="main-nav__menu-link" href="#home">Categories</a></li>
                 <li class="main-nav__menu-item"><a class="main-nav__menu-link" href="#home">Pages</a></li> 
             </ol>
@@ -57,7 +61,7 @@
                 <p>UP TO</p>
                 <h3>50% OFF</h3>
             </div>
-            <button type="button" class="btn-shop">SHOP NOW</button> 
+            <a class="btn-shop"><span>SHOP NOW</span></a>
         </div> 
         <div class="slider-control">
             <img src="./images/gray-rectangle.png" width="15px" alt="slider-control">
@@ -103,27 +107,26 @@
             <h3>HandPicked</h3>
             <img class="handpicked-container__heading-diamond" src="./images/diamond.png" alt="diamond" width="21" height="21">
             <img class="handpicked-container__heading-line" src="./images/line.png" alt="line">
-
         </div>
         <div class="handpicked-container__images">
             <div class="handpicked-container__images-img boots">
-                <img class="boots-img handpicked-container__images--hover" src="./images/boots.png" alt="boots" width="400" height="400">
+                <img class="boots-img handpicked-container__images--hover" src="./images/boots.png" alt="boots" width="300" height="300">
                 <button class="handpicked-container__images-btn">SHOP NOW</button>
             </div>
             <div class="handpicked-container__images-img jewelry">
-                <img class="jewelry-img handpicked-container__images--hover" src="./images/jewelry.png" alt="discount 30 jewelry" width="400" height="400">
+                <img class="jewelry-img handpicked-container__images--hover" src="./images/jewelry.png" alt="discount 30 jewelry" width="300" height="300">
                 <button class="handpicked-container__images-btn">SHOP NOW</button>
             </div>
             <div class="handpicked-container__images-img paris">
-                <img class="paris-img handpicked-container__images--hover" src="./images/paris.png" alt="paris hilton collection" width="400" height="820">
+                <img class="paris-img handpicked-container__images--hover" src="./images/paris.png" alt="paris hilton collection" width="300" height="720">
                 <button class="handpicked-container__images-btn">SHOP NOW</button>
             </div>
             <div class="handpicked-container__images-img discount">
-                <img class="discount-img handpicked-container__images--hover" src="./images/discount.png" alt="discount 50 jewelry" width="400" height="400">
+                <img class="discount-img handpicked-container__images--hover" src="./images/discount.png" alt="discount 50 jewelry" width="300" height="300">
                 <button class="handpicked-container__images-btn">SHOP NOW</button>
             </div>
             <div class="handpicked-container__images-img wallet">
-                <img class="wallet-img handpicked-container__images--hover" src="./images/wallet.png" alt="wallet" width="400" height="400">
+                <img class="wallet-img handpicked-container__images--hover" src="./images/wallet.png" alt="wallet" width="300" height="300">
                 <button class="handpicked-container__images-btn">SHOP NOW</button>
             </div>
         </div>
@@ -257,6 +260,86 @@
 
 
 
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer-container">
+        <div class="footer-container__section shops">
+            <h3 class="footer-container__section-title">SHOPS</h3>
+            <ul class="footer-container__list">
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Women</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Men</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Shoes</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Bags & Accessories</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Top Brands</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Sale & Special Offers</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Lookbook</a> </li>    
+            </ul>
+        </div>
+        <div class="footer-container__section information">
+            <h3 class="footer-container__section-title">INFORMATION</h3>
+            <ul class="footer-container__list">
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">New In</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="./about-us/about.html">About Us</a> </li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Customer Service</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">New Collection</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Best Sellers</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Manufactures</a> </li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Privacy policy</a> </li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Terms & Condition</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Blog</a></li>   
+            </ul>
+        </div>
+        <div class="footer-container__section customer-service">
+            <h3 class="footer-container__section-title">CUSTOMER SERVICE</h3>
+            <ul class="footer-container__list">
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Search Terms</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Advenced Search</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Orders and Returns</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Contact Us</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">RSS</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Help & FAQs</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Consultant</a></li>
+                <li class="footer-container-item"> <a class="footer-container-link" href="#">Store Locations</a></li>
+            </ul>
+        </div>
+        <div class="footer-container__section stay-connected">
+            <h3 class="footer-container__section-title">STAY CONNECTED</h3>
+            <img class="footer-icon" src="./images/facebook-footer.png" alt="facebook-icon">
+            <img class="footer-icon" src="./images/twitter-footer.png" alt="twitter-icon">
+            <img class="footer-icon" src="./images/instagram-footer.png" alt="instagram-icon">
+            <img class="footer-icon" src="./images/pinterest-footer.png" alt="pinterest-icon">
+            <img class="footer-icon" src="./images/wifi-signal.png" alt="wifi-icon">
+        </div>
+        <div class="footer-container__section newsletter">
+            <h3 class="footer-container__section-title">SUBSCRIBE <em>in</em> OUR NEWSLETTER</h3>
+            <form class="footer-container__section-form" action="">
+                <input type="email" placeholder="Enter Your Email Address" class="footer-input"> 
+                <button class="footer-btn">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom__line">
+            <img class="footer-bottom__line-img" src="./images/footer-line.png" alt="">
+        </div> 
+        <div class="footer-bottom__rights">
+            <div class="footer-bottom__rights-text">
+                <p>ⓒ 2015 Shopia Fashion Store Shopify.</p>
+                <p>All Rights Reserved. Ecommerce Software by Shopify.</p>
+                <p>Designed by MoccaLabs.com</p>
+            </div>
+            <div class="footer-bottom__rights-arrow">
+                <a href="#"><img src="./images/up-arrow.png" alt=""></a>
+            </div>
+        </div> 
+        <div class="footer-bottom__cards">
+            <img src="./images/visa.png" alt="visa-icon">
+            <img src="./images/american-express.png" alt="american-express-icon">
+            <img src="./images/discovery.png" alt="discover-icon">
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
