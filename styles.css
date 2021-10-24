@@ -334,6 +334,122 @@ button{
     opacity: .8;
 }
 
+/*SUMMER COLLECTION*/
+
+.f1-img, .f2-img, .f3-img, .f4.img, .f5-img, .f6-img, .f7-img, .f8-img {
+    /*width: 90%;*/
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.handpicked-container__images {
+    display: grid;
+    grid-template-areas: 
+    "f1"
+    "f2"
+    "f3"
+    "f4"
+    "f5"
+    "f6"
+    "f7"
+    "f8";
+    grid-gap: 1rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.container__images-img:hover {
+    opacity: .8;
+    transition-duration: .6s;
+}
+
+/*OUR BRAND*/ /*CUSTOMER SAYS*/
+
+.brand-container .customer-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-containers {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3.5rem;
+    position: relative;
+    margin-top: 6rem;
+}
+
+/*CUSTOMER SAYS*/
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 692px;
+    max-width: 100%;
+    background: url("./images/background.png");
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+
+.comments .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.handpicked-container__heading h3 {
+    font-size: 2.5rem;
+    width: 50%;
+    margin-bottom: 5rem;
+}
+.comments .rectangles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+.comments .rectangle8 {
+    width: 100%; 
+    max-width: 350px;
+}
+
+.comments h2 {width: 100%;}
+.comments .rectangles {
+    grid-template-columns: 1fr;
+    grid-row-gap: 5rem;
+}
+
+.welcome_screen .rectangles {
+    grid-column: 3/5;
+    position: relative;
+}
+
+.comments .rectangles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.comments .rectangle8 {
+    width: 100%; 
+    max-width: 350px;
+}
+
+
+
+
+
 /* FOR TABLETS AND SMALL LAPTOPS */
 
 @media screen and (min-width: 769px) {
