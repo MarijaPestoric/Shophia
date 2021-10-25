@@ -339,7 +339,7 @@ button{
     width: 100%;
     overflow: hidden;
 }
-.container__heading{
+.handpicked-container__heading{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,18 +348,18 @@ button{
     width: 100%;
     overflow: hidden;
 }
-.container__heading-line{
+.handpicked-container__heading-line{
     width: 100%;
     height: .1rem;
     max-width: 36rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.container__heading-diamond{
+.handpicked-container__heading-diamond{
     width: .7rem;
     height: .7rem;
 }
-.container__heading h3{
+.handpicked-container__heading h3{
     padding-left: 1rem;
     padding-right: 1rem;
     font-family: 'Playfair Display', cursive;
@@ -430,117 +430,10 @@ button{
     transition-duration: .6s;
 }
 
-/*SUMMER COLLECTION */
-
-.summer-container{
-    max-width: 100%;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-}
-.summer-container__collection{
-    margin: 0 auto; 
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    max-width: 100%;
-    justify-content: center;
-    margin-top: 3rem;
-    padding-left: 9rem;
-    padding-right: 9rem;
-}
-.summer-container__collection-img{
-    position: relative;
-    text-align: center;
-
-}
-.summer-container__collection-img img{
-    height: auto;
-    min-width: 15rem;
-    text-align: center;
-    padding: .3rem;
-}
-
-/* OUR BRAND */
-
-.brand-container__images{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    width: 100%;
-    max-width: 100%;
-    padding-left: 8rem;
-    padding-right: 8rem;
-}
-.brand-container__images-img{
-    min-width: 8rem;
-    margin: 0 auto;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-/* CUSTOMERS SAYS */
-.customer-container{
-    max-width: 100%;
-    width: 100%;
-}
-.customer-container__quotes{/*
-    background-color: #d9bf8f;*/
-    background-image: url("./images/customer-bg.png");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    max-width: 100%;
-    margin-top: 3rem;
-    background-repeat: no-repeat;
-}
-
-.customer-container__first, .customer-container__second{
-    margin-bottom: 4rem;
-    font-family: 'Lora';
-}
-.customer-container__first{
-    text-align: left;
-    margin-top: 2rem;
-}
-.customer-container__second{
-    text-align: right;
-    margin-top: 2rem;
-}
-.customer-container__content{
-    font-family: 'Playfair Display', cursive;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-.customer-container__text{
-    font-family: 'Playfair Display', cursive;
-    color: white;
-    padding-bottom: 3rem;
-    padding-top: 5rem;
-    line-height: 1.3rem;
-    font-size: 1rem;
-}
-.customer-container__text-role{
-    color: #7F7E7E;
-    padding-top: 1rem;
-    font-family: "Lato", sans-serif;
-}
-.customer-img{
-    text-align: center;
-    width: 18rem;
-    height: auto;
-}
-
 /* FOOTER */
 
 .footer-container{
+    margin-top: 4rem;
     display: grid;
     grid-template-areas: 
      "shops"
@@ -792,17 +685,6 @@ button{
     .paris-img{
         height: 100%;
     }
-    .summer-container__collection{
-        grid-template-columns: 1fr 1fr;
-    }
-    .brand-container__images{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .customer-container__quotes{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
     .footer-container{
         grid-template-areas: 
             "shops information"
@@ -861,24 +743,6 @@ button{
         overflow: hidden;
         max-width: 100%;
     }
-    .summer-container__collection{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .brand-container__images{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-    .customer-container__quotes{
-        justify-content: space-evenly;
-    }
-    .customer-container__first{
-        display: flex;
-        flex-direction: row;
-    }
-    .customer-container__second{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    
     .footer-container{
         grid-template-areas: 
             "shops information customer connect"
